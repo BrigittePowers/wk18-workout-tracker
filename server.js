@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const PORT = process.env.PORT || 3000;
 
-const Exercise = require('./exerciseModel.js');
+const Exercise = require('./models/workout.js');
 // example of model requirement
 const app = express();
 
@@ -24,6 +24,11 @@ mongoose.connect(
 		useFindAndModify: false,
 	},
 );
+
+const db = require('./models/workout.js');
+
+// require('./routes/apiRoutes')(app);
+// require('./routes/htmlRoutes')(app);
 
 // // submit route example
 // app.post('/submit', ({ body }, res) => {
