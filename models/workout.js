@@ -10,6 +10,8 @@ const Schema = mongoose.Schema;
 // schema will record the date of a workout
 //and the exercises performed (as an array of objects)
 
+// model was matched to existing seed.js file
+
 const workoutSchema = new Schema({
 	day: {
 		type: Date,
