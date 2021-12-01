@@ -7,4 +7,9 @@ module.exports = function (app) {
 	app.get('/exercise', function (req, res) {
 		res.sendFile(path.join(__dirname, '../public/exercise.html'));
 	});
+
+	// dashboard
+	app.get('/stats', function (req, res) {
+		res.sendFile(path.join(__dirname, '../public/stats.html'));
+	});
 };

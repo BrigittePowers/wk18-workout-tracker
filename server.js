@@ -33,7 +33,7 @@ mongoose.connect(
 
 // routes
 // require('./routes/apiRoutes')(app);
-require('./routes/htmlRoutes')(app);
+require('./routes/publicRoutes')(app);
 
 app.listen(PORT, () => {
 	console.log(`App running on port ${PORT}!`);
