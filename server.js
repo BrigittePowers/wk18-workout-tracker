@@ -1,13 +1,18 @@
+// dependencies
 const express = require('express');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 
+// connect to port
 const PORT = process.env.PORT || 3000;
 
-const Exercise = require('./models/workout.js');
-// example of model requirement
+// models
+const workout = require('./models/workout.js');
+
+// express connection
 const app = express();
 
+// middleware
 app.use(logger('dev'));
 
 app.use(express.urlencoded({ extended: true }));
@@ -15,6 +20,7 @@ app.use(express.json());
 
 app.use(express.static('public'));
 
+// mongoose connects first to ATLAS then attempts local connection
 mongoose.connect(
 	process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
 	{
@@ -24,8 +30,6 @@ mongoose.connect(
 		useFindAndModify: false,
 	},
 );
-
-const db = require('./models/workout.js');
 
 // require('./routes/apiRoutes')(app);
 // require('./routes/htmlRoutes')(app);
