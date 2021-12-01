@@ -26,6 +26,8 @@ _Instructions and/or Examples for utilizing the project:_
 
 Live demo can be viewed at: https://wk18-workout-tracker.herokuapp.com
 
+![6ed33338cc](https://user-images.githubusercontent.com/86506686/144328113-8c02f291-cbc2-4d3c-89b8-69948921d468.png)
+
 ## Questions
 
 GitHub: [@BrigittePowers](https://api.github.com/users/BrigittePowers)
