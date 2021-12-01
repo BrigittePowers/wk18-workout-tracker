@@ -31,19 +31,9 @@ mongoose.connect(
 	},
 );
 
+// routes
 // require('./routes/apiRoutes')(app);
 // require('./routes/htmlRoutes')(app);
-
-// // submit route example
-// app.post('/submit', ({ body }, res) => {
-// 	User.create(body)
-// 		.then((dbUser) => {
-// 			res.json(dbUser);
-// 		})
-// 		.catch((err) => {
-// 			res.json(err);
-// 		});
-// });
 
 app.listen(PORT, () => {
 	console.log(`App running on port ${PORT}!`);
